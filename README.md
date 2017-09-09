@@ -9,7 +9,7 @@ This is a project from Udacity's **Frontend Nanodegree** [program](https://www.u
 ___
 
 ### Portfolio
-![Portfolio project screen shot](images/portfolio.jpg)
+![Portfolio project screen shot](img/portfolio.jpg)
 ___
 
 
