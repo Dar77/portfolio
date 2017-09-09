@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="web projects portfolio by darren ware">
+	    <meta name="author" content="darren ware">
+	    <!-- chrome, firefox os and opera -->
+	    <meta name="theme-color" content="#000">
+		<!-- ios safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Web projects portfolio - Darren Ware</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mandali&effect=emboss">
+		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+		<link rel="stylesheet" href="css/custom.css">
+		<!-- html5 shim and Respond.js for ie8 support of html5 elements and media queries -->
+        <!--[if lt ie 9]>
+        	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	</head>
+    <body>
+        <div class="container">
+
+	    	<header class="row">
+		        <div class="col-xs-12 col-sm-4 col-md-6">
+		        	<img src="img/logo.svg" alt="Porfolio Logo" class="logo">
+		        </div>
+		        <div class="col-xs-12 col-sm-8 col-md-6">
+		        	<h1>Darren Ware</h1>
+		        	<h3 class="sub-heading font-effect-emboss">Portfolio</h3>
+		        </div>
+	    	</header>
+
+	    	<article>
+		    	<div class="row">
+			        <div class="col-md-12">
+			            <picture>
+					        <source media="(min-width: 1200px)"
+					                srcset="img/light-lines-large.jpg">
+					        <source media="(min-width: 992px)"
+					                srcset="img/light-lines-medium.jpg, img/light-lines-medium_2x.jpg 2x">
+			                <source media="(min-width: 768px)"
+					                srcset="img/light-lines-small.jpg, img/light-lines-small_2x.jpg 2x">
+					        <source media="(min-width: 401px)"
+					                srcset="img/light-lines-mobile.jpg">
+					        <source media="(max-width: 400px)"
+					                srcset="img/light-lines-mobile-ex-small.jpg">
+					        <img src="img/light-lines-small.jpg" alt="colored lines of light digital art work" class="main-img">
+				        </picture>
+			        	<div class="img-caption">
+			        		<h4>&lt;Web Projects&gt;</h4>
+			        		<p class="caption">A collection of my recent web projects.</p>
+			        	</div>
+			        </div>
+				</div> <!-- end .row -->
+
+				<div class="row">
+				    <div class="col-md-12">
+				    	<h2>Featured Work</h2>
+				    </div>
+		    	</div> <!-- end .row -->
+
+		    	<div class="row"> <!-- row is filled with over 12 columns so that they wrap and stack up on tablet and desktop break points -->
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+			    		<img src="img/lap-top.jpg" srcset="img/lap-top.jpg, img/lap-top_2x.jpg 2x" alt="photo of lap top computer" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project1">
+			    		<h3>Portfolio Project</h3>
+			    		<p><a class="fontawesome-link" href="http://github.com/Dar77/portfolio" target="_blank"> http://github.com/Dar77/portfolio</a></p>
+			    		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#project1">More info.</button>
+	                    <!-- bootstrap modal 1 -->
+					    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project-1" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-1">Portfolio Project</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="http://github.com/Dar77/portfolio" target="_blank"><img src="img/portfolio.jpg" srcset="img/portfolio.jpg, img/portfolio_2x.jpg 2x" alt="portfolio project screen shot" class="modal-img"></a>
+							                	<h3>Project Brief</h3>
+							                    <p>For this project I was required to build a web portfolio in which to present various web based projects. The portfolio needed to be fully responsive and could be built using a CSS framework. The project's minimum specification was:</p>
+							                    <ul class="modal-list">
+							                    	<li>Follow the provided design mock-up (PDF) for layout.</li>
+							                    	<li>Must feature a logo as part of the header.</li>
+							                    	<li>Have 3 columns of images representing projects.</li>
+							                    	<li>Design must be fully responsive.</li>
+							                    	<li>HTML and CSS must follow Udacity's style guide.</li>
+							                    	<li>HTML and CSS must validate.</li>
+							                    	<li>Must make use of semantic HTML5 elements.</li>
+							                    	<li>Must maintain a separation of concerns. (CSS/HTML/JS)</li>
+							                    </ul>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+							                    <h3>Solution</h3>
+							                    <p>For my portfolio I made use of the Bootstrap framework to achieve a fully responsive layout. I applied the various Bootstrap classes to semantic HTML5 elements to build the design.</p>
+							                    <p>To make my images fully responsive and to respond to various screen sizes by providing an appropriate image file size (and quality) I have made use of <em>srcset</em> and the picture element. For the main image, using the picture element provided the means to give a different crop of the image for smaller screen sizes.</p>
+							                    <p>For the CSS I have started with small screen default styles and added style changes for larger screens in media queries.</p>
+							                    <p>I've customized the project by adding custom fonts and icons to the design. Also I've used Bootstrap's Modals for extra information panels and made use of CSS transition effects on clickable images and buttons.</p>
+							                    <p>As well as using validation for CSS and HTML I was using Grunt task runner to batch process my images and to add vendor-prefixes to my CSS.
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>CSS3</li>
+							                    	<li>Bootstrap</li>
+							                    	<li>Responsive Images, srcset and picture element</li>
+							                    	<li>Grunt</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Git Hub</h3>
+							                    <p><a class="fontawesome-link" href="http://github.com/Dar77/portfolio" target="_blank"> http://github.com/Dar77/portfolio</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 1 -->
+			    	</section>
+
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+                        <img src="img/resume.jpg" srcset="img/resume.jpg, img/resume_2x.jpg 2x" alt="resume project screen shot" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project2">
+			    		<h3>Resume Project</h3>
+	                    <p><a class="fontawesome-link" href="https://github.com/Dar77/resume" target="_blank"> https://github.com/Dar77/resume</a></p>
+	                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project2">More info.</button>
+	                    <!-- bootstrap modal 2 -->
+					    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project-2" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-2">Resume Project</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="https://github.com/Dar77/resume" target="_blank"><img src="img/resume.jpg" srcset="img/resume.jpg, img/resume_2x.jpg 2x" alt="resume project screen shot" class="modal-img"></a>
+							                	<h3>Project Brief</h3>
+							                    <p>For this project I needed to bulid a resume that is dynamically constructed from javascript objects. The resume could contain real or fake data, but the data in the objects had to follow the provided schema exactly.</p>
+							                    <p>The HTML code needed to build the resume was stored in <em>helper.js</em> and the bulk of the work needed to build the resume was carried out in <em>resumeBuilder.js</em>. HTML code snippets needed to be manipulated with Jquery and then inserted into the resume in the appropriate locations. These were some of the projects minimum requirements:</p>
+							                    <ul class="modal-list">
+							                    	<li>Must match the provided schema exactly for the bio, education, work and projects objects.</li>
+							                    	<li>The solution must be capable of displaying any resume that provides the data in the given schema.</li>
+							                    	<li>The solution must work for any number of items in arrays etc.</li>
+							                    	<li>All resume sections are built using modular functions that can run in any order.</li>
+							                    	<li>Code follows Udacity's style guide.</li>
+							                    	<li>Each object has a property named display which encapsulates a function that displays the object's properties in the resume.</li>
+							                    	<li>Must include a Google map.</li>
+							                    </ul>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+					                    		<h3>Solution</h3>
+							                    <p>After constructing my objects and checking them with jsHint, I used javascript's <em>string.replace</em> method to manipulate the HTML code snippets stored in <em>helper.js</em>. The code was added to the resume using Jquery's <em>append</em> or <em>prepend</em> functions.</p>
+							                    <p>For the various arrays I used conditional statements to check for content and then used <em>for</em> loops to iterate over the content and add it to the resume. Jquery's selectors were used to grab the <em>id</em> to the various sections of the resume.</p>
+							                    <p>To customize the resume I adjusted the CSS to change the design, used custom fonts and used Bootstrap to make the layout responsive. I added a navigation bar and a smooth scroll script. Below the navigation I added some gauges that I adjusted from Google charts and for the Google map I added alternative styling.
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>CSS3</li>
+							                    	<li>Javascript</li>
+							                    	<li>Jquery</li>
+							                    	<li>Bootstrap</li>
+							                    	<li>Google map api</li>
+							                    	<li>Google charts</li>
+							                    	<li>Git</li>
+							                    	<li>Git Hub</li>
+							                    	<li>jsHint</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Visit</h3>
+							                    <p><a class="fontawesome-link" href="https://github.com/Dar77/resume" target="_blank"> https://github.com/Dar77/resume</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 2 -->
+			    	</section>
+
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+			    		<img src="img/arcade-game.jpg" srcset="img/arcade-game.jpg, img/arcade-game_2x.jpg 2x" alt="arcade game screen shot" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project3">
+			    		<h3>Arcade Game</h3>
+	                    <p><a class="fontawesome-link" href="https://github.com/Dar77/arcade-game" target="_blank"> https://github.com/Dar77/arcade-game</a></p>
+	                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project3">More info.</button>
+	                    <!-- bootstrap modal 3 -->
+					    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project-3" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-3">Arcade Game</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="https://github.com/Dar77/arcade-game" target="_blank"><img src="img/game-screen.jpg" srcset="img/game-screen.jpg, img/game-screen_2x.jpg 2x" alt="arcade game screen shot" class="modal-img"></a>
+							                	<h3>Project Brief</h3>
+							                    <p>For this project I had to create an arcade game clone of the classic 1981 video game, Frogger. We were provided with a game engine and game art assets as a starting point. From there we had to implement the games functionality using Object Orientated Javascript and using the HTML5 canvas element. The game requires the following basic functionality:</p>
+							                    <ul class="modal-list">
+							                    	<li>The game functions correctly, error free.</li>
+							                    	<li>The player cannot move off screen.</li>
+							                    	<li>Enemies move across the screen on the road section.</li>
+							                    	<li>Enemy / player collisions happen logically. (not too early or too late)</li>
+							                    	<li>Enemy / player collisions reset the game.</li>
+							                    	<li>Something happens when the player wins the game.</li>
+							                    </ul>
+							                    <p>In addition, the project had these other minimum requirements:</p>
+							                    <ul class="modal-list">
+							                    	<li>Object Orientated Code - Game objects (player / enemies) are implemented using object orientated programming features.</li>
+							                    	<li>Comments - are present and effectively explain longer code procedures.</li>
+							                    	<li>Code Quality - Code is written with consistent, logical and easy to read formatting. Follows Udacity's style guide.</li>
+							                    	<li>README - Includes a README.md file detailing all steps required to successfully run the application.</li>
+							                    </ul>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+							                    <h3>Solution</h3>
+							                    <p>The games code uses javascript pseudo classical classes and subclasses and makes use of object prototype to create a range of on screen instances of various game entities. These are rendered on the canvas within a gaming loop. I made use of jquery to create the transitions between the various game information screens, game over, win etc.</p>
+							                    <p>Beyond the required game elements I've added pick up items that randomly run across the screen that give various points when collected or in the case of 'heart' pick ups, give a new player life.</p>
+												<p>Also I've added game obstacles in the form of rocks and holes that the player must manoeuvre around.  Rocks block your way and holes reset the player to start position as well as losing a player life.</p>
+												<p>The Game has added score, road cross and player life counters that track the players progress.  If the score target is met before the road cross target is reached or vice versa, the text and text color changes to highlight the players current progress. When the player's life count reaches 1 the text and text color changes to red to alert player to their impending doom!</p>
+												<p>I've also added player alerts for colliding with enemies, crossing the road, collecting pick ups and falling down holes.</p>
+												<p>The player board and road size have been increased and I've added pre-game instruction screens and 'Game Over' and 'Win' screens to complete the experience.</p>
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>Canvas element</li>
+							                    	<li>CSS3</li>
+							                    	<li>Javascript</li>
+							                    	<li>Jquery</li>
+							                    	<li>Git</li>
+							                    	<li>Git Hub</li>
+							                    	<li>jsHint</li>
+							                    	<li>Markdown - README</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Visit</h3>
+							                    <p><a class="fontawesome-link" href="https://github.com/Dar77/arcade-game" target="_blank"> https://github.com/Dar77/arcade-game</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 3-->
+			    	</section>
+
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+			    		<img src="img/keyboard.jpg" srcset="img/keyboard.jpg, img/keyboard_2x.jpg 2x" alt="photo of computer keyboard" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project4">
+			    		<h3>Optimize Website</h3>
+	                    <p><a class="fontawesome-link" href="http://github.com/Dar77/optimize" target="_blank"> http://github.com/Dar77/optimize</a></p>
+	                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project4">More info.</button>
+	                    <!-- bootstrap modal 4 -->
+					    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="project-4" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-4">Optimize Website</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="http://github.com/Dar77/optimize" target="_blank"><img src="img/keyboard.jpg" srcset="img/keyboard.jpg, img/keyboard_2x.jpg 2x" alt="photo of computer keyboard" class="modal-img"></a>
+							                	<h3>Project Brief</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+							                    <h3>Solution</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>CSS3</li>
+							                    	<li>Javascript</li>
+							                    	<li>Git</li>
+							                    	<li>Grunt</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Visit</h3>
+							                    <p><a class="fontawesome-link" href="http://github.com/Dar77/optimize" target="_blank"> http://github.com/Dar77/optimize</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 4-->
+			    	</section>
+
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+			    		<img src="img/keep-calm.jpg" srcset="img/keep-calm.jpg, img/keep-calm_2x.jpg 2x" alt="photo of computer on desk with keep calm mug" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project5">
+			    		<h3>Single-Page App</h3>
+	                    <p><a class="fontawesome-link" href="http://github.com/" target="_blank"> http://github.com/</a></p>
+	                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project5">More info.</button>
+	                    <!-- bootstrap modal 5 -->
+					    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="project-5" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-5">Project 5</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="http://github.com/" target="_blank"><img  src="img/keep-calm.jpg" srcset="img/keep-calm.jpg, img/keep-calm_2x.jpg 2x" alt="photo of computer on desk with keep calm mug" class="modal-img"></a>
+							                	<h3>Single-Page App</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+							                    <h3>Solution</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>CSS3</li>
+							                    	<li>Javascript</li>
+							                    	<li>Git</li>
+							                    	<li>Grunt</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Visit</h3>
+							                    <p><a class="fontawesome-link" href="http://github.com/" target="_blank"> http://github.com/</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 5-->
+			    	</section>
+
+			    	<section class="col-xs-12 col-sm-6 col-md-4 project">
+			    		<img src="img/code.jpg" srcset="img/code.jpg, img/code_2x.jpg 2x" alt="photo of code on computer screen" class="img-responsive modal-trigger" data-toggle="modal" data-target="#project6">
+			    		<h3>Feed Reader</h3>
+	                    <p><a class="fontawesome-link" href="http://github.com/" target="_blank"> http://github.com/</a></p>
+	                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project6">More info.</button>
+	                    <!-- bootstrap modal 6 -->
+					    <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="project-6" aria-hidden="true">
+					        <div class="modal-dialog modal-lg">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+					                    <h2 class="modal-title font-effect-emboss" id="project-6">Feed Reader</h2>
+					                </div>
+					                <div class="modal-body text-left">
+					                	<div class="row">
+					                		<div class="col-xs-12 col-sm-12 col-md-6">
+							                	<a class="img-link" href="http://github.com/" target="_blank"><img  src="img/code.jpg" srcset="img/code.jpg, img/code_2x.jpg 2x" alt="photo of code on computer screen" class="modal-img"></a>
+							                	<h3>Project Brief</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+							                    <h3>Solution</h3>
+							                    <p>Placeholder text applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed.</p>
+					                    	</div>
+					                    	<div class="col-xs-12 col-sm-12 col-md-6">
+							                    <h3>Skills and Tools Used</h3>
+							                    <ul class="modal-skill-list">
+							                    	<li>HTML5</li>
+							                    	<li>CSS3</li>
+							                    	<li>Javascript</li>
+							                    	<li>Git</li>
+							                    	<li>Grunt</li>
+							                    </ul>
+							                    <h3 class="margin-btm">Visit</h3>
+							                    <p><a class="fontawesome-link" href="http://github.com/" target="_blank"> http://github.com/</a></p>
+					                    	</div>
+					                    </div>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div> <!-- close modal 6-->
+			    	</section>
+		    	</div> <!-- end main content .row -->
+	    	</article>
+
+	    	<footer class="row">
+	    		<div class="col-xs-12">
+				    <ul>
+				        <li><a class="fontawesome-facebook" href="https://www.facebook.com"></a></li>
+				        <li><a class="fontawesome-google-plus" href="https://plus.google.com"></a></li>
+				        <li><a class="fontawesome-github-sign" href="http://github.com/Dar77"></a></li>
+				        <li><a class="fontawesome-linkedin" href="https://au.linkedin.com"></a></li>
+					</ul>
+				</div>
+	    	</footer>
+
+	    </div> <!-- end .container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	    <script src="js/picturefill.min.js"></script>
+    </body>
+</html>
