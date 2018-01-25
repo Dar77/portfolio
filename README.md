@@ -10,6 +10,7 @@ ___
 
 ### Portfolio
 ![Portfolio project screen shot](img/portfolio.jpg)
+[visit portfolio project](http://www.it48.xyz/portfolio)
 ___
 
 
