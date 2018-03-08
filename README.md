@@ -9,8 +9,10 @@ This is a project from Udacity's **Frontend Nanodegree** [program](https://www.u
 ___
 
 ### Portfolio
-![Portfolio project screen shot](img/portfolio.jpg)
+
 [visit portfolio project](http://www.it48.xyz/portfolio)
+
+![Portfolio project screen shot](img/portfolio.jpg)
 ___
 
 
