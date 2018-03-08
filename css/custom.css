@@ -201,6 +201,10 @@ a:active {
   margin: 0 auto;
 }
 
+.moving-text {
+  display: none;
+}
+
 header {
   margin: 20px 0 30px;
 }
@@ -339,6 +343,15 @@ ul {
 	  font-size: 2.5em;
 	}
 } /* end 970px and larger styles */
+
+@media screen and (min-width: 992px) {
+
+  .moving-text {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+} /* end 992px and larger styles */
 
 @media screen and (min-width: 1200px) {
 
