@@ -4,8 +4,6 @@ var flies = function() {
 	  family : '"source_code_proregular", sans-serif',
 	  size : 120,
 	  fill : '#4c9ca0',
-	  paddingLeft : 40,
-	  paddingRight : 40
 	});
 
 	var material = new Blotter.FliesMaterial();
