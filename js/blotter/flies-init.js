@@ -1,7 +1,7 @@
 // flies-init.js - adapted from docs at - https://blotter.js.org/
 var flies = function() {
 	var text = new Blotter.Text('http:', {
-	  family : '"source_code_proregular", sans-serif',
+	  family : 'source_code_proregular, monospace',
 	  size : 120,
 	  fill : '#4c9ca0',
 	});
