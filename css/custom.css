@@ -387,6 +387,10 @@ ul {
 	  border-top: 3px solid grey;
 	}
 
+  .main-img {
+    background-color: black;
+  }
+
 	[class*="fontawesome-"]:before { /* fontawsome styles */
 	  font-size: 1.5em;
 	}
